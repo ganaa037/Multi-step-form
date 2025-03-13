@@ -1,4 +1,5 @@
-import { Footer, Header, Input } from "@/components";
+import { Footer, Header, Input, Step1, Step2 } from "@/components";
+import { Step3 } from "@/components/Step3";
 import Image from "next/image";
 
 export default function Home() {
@@ -7,12 +8,8 @@ export default function Home() {
       <div className="w-[480px] h-[655px] p-[32px] rounded-[8px] bg-[#FFF] flex flex-col justify-between">
         <div className="flex flex-col gap-7">
           <Header></Header>
-          <div className="flex flex-col gap-3">
-            <Input text={"Email"} type={"email"}></Input>
-            <Input text={"Phone number"} type={"number"}></Input>
-            <Input text={"Password"} type={"password"}></Input>
-            <Input text={"Confirm password"} type={"password"}></Input>
-          </div>
+
+          <Step3></Step3>
         </div>
         <Footer></Footer>
       </div>
