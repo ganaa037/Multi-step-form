@@ -1,7 +1,7 @@
 import { Input } from "../components";
-export const Step2 = () => {
+export const Step2 = ({ onClick, count }) => {
   return (
-    <form className="flex flex-col gap-3">
+    <form onClick={onClick} count={count} className="flex flex-col gap-3">
       <Input text={"Email"} type={"email"} placeholder={"Email"} />
       <Input
         text={"Phone number"}
